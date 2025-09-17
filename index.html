@@ -51,20 +51,13 @@
                         <p class="text-sm text-gray-600 dark:text-gray-400">Unterstützung für Ihre neurodivergente Familie</p>
                     </div>
                 </div>
-                <div class="flex items-center space-x-2">
-                    <button id="menuBtn" class="md:hidden text-gray-600 dark:text-gray-400">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                    <button id="homeBtn" class="hidden md:flex items-center space-x-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition-colors">
-                        <i class="fas fa-home"></i>
-                        <span>Startseite</span>
-                    </button>
-                    <!-- Dark/Light Mode Toggle Button -->
-                    <button id="darkModeToggle" class="ml-2 p-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
-                        <i class="fas fa-moon hidden dark:inline text-lg"></i>
-                        <i class="fas fa-sun inline dark:hidden text-lg"></i>
-                    </button>
-                </div>
+                <button id="menuBtn" class="md:hidden text-gray-600 dark:text-gray-400">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <button id="homeBtn" class="hidden md:flex items-center space-x-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition-colors">
+                    <i class="fas fa-home"></i>
+                    <span>Startseite</span>
+                </button>
             </div>
         </nav>
     </header>
@@ -72,13 +65,8 @@
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
         <div class="bg-white dark:bg-gray-800 w-64 h-full shadow-lg">
-            <div class="p-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
+            <div class="p-4 border-b border-gray-200 dark:border-gray-700">
                 <h2 class="font-semibold">Navigation</h2>
-                <!-- Dark/Light Mode Toggle in Mobile Menu -->
-                <button id="darkModeToggleMobile" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
-                    <i class="fas fa-moon hidden dark:inline"></i>
-                    <i class="fas fa-sun inline dark:hidden"></i>
-                </button>
             </div>
             <nav class="p-4 space-y-3">
                 <button class="nav-btn w-full text-left p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700" data-section="home">
@@ -293,6 +281,108 @@
                         <div class="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
                             <h4 class="font-semibold text-red-800 dark:text-red-400 mb-2">✗ NICHT tun</h4>
                             <p>Diskutieren, Logik anwenden, anfassen ohne Erlaubnis</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beruhigungs-Karten -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-6">
+                    <button class="collapsible w-full text-left flex items-center justify-between p-2">
+                        <h3 class="text-xl font-semibold flex items-center">
+                            <i class="fas fa-heart text-danger mr-3"></i>
+                            Beruhigungs-Karten für Kinder
+                        </h3>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="content hidden mt-4 grid md:grid-cols-2 gap-4">
+                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 dark:text-blue-400 mb-2">🐻 Atmen wie ein Bär</h4>
+                            <p>4 Sekunden einatmen, 6 Sekunden ausatmen</p>
+                        </div>
+                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 dark:text-blue-400 mb-2">🤗 Feste Umarmung</h4>
+                            <p>Sich selbst umarmen oder Kissen drücken</p>
+                        </div>
+                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 dark:text-blue-400 mb-2">👣 Füße spüren</h4>
+                            <p>Barfuß auf verschiedene Oberflächen stellen</p>
+                        </div>
+                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 dark:text-blue-400 mb-2">🧊 Kalt/Warm</h4>
+                            <p>Eiswürfel halten oder warmes Kirschkernkissen</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cool-Down Raum -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-6">
+                    <button class="collapsible w-full text-left flex items-center justify-between p-2">
+                        <h3 class="text-xl font-semibold flex items-center">
+                            <i class="fas fa-home text-danger mr-3"></i>
+                            Cool-Down Raum einrichten
+                        </h3>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="content hidden mt-4 space-y-4">
+                        <div class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-purple-800 dark:text-purple-400 mb-2">🏠 Essentials</h4>
+                            <p>Dimmbares Licht, weiche Decken, Gewichtsdecke</p>
+                        </div>
+                        <div class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-purple-800 dark:text-purple-400 mb-2">🎯 Sensorik</h4>
+                            <p>Fidget-Spielzeug, Stressball, Noise-Cancelling-Kopfhörer</p>
+                        </div>
+                        <div class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-purple-800 dark:text-purple-400 mb-2">🧸 Beruhigung</h4>
+                            <p>Lieblingskuscheltier, beruhigende Musik-Playlist</p>
+                        </div>
+                        <div class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-purple-800 dark:text-purple-400 mb-2">🛡️ Sicherheit</h4>
+                            <p>Keine harten Kanten, weiche Materialien</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beruhigende Aktivitäten Section -->
+        <section id="calming" class="section">
+            <div class="flex items-center mb-6">
+                <button class="back-btn mr-4 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div>
+                    <h1 class="text-3xl font-bold text-accent">Beruhigende Aktivitäten</h1>
+                    <p class="text-gray-600 dark:text-gray-400">Sensorisch freundliche Wege zum Entspannen und Regulieren</p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Sensorische Hilfsmittel -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-6">
+                    <button class="collapsible w-full text-left flex items-center justify-between p-2">
+                        <h3 class="text-xl font-semibold flex items-center">
+                            <i class="fas fa-hand-paper text-accent mr-3"></i>
+                            Sensorische Hilfsmittel konkret
+                        </h3>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="content hidden mt-4 grid md:grid-cols-2 gap-4">
+                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">💪 Propriozeption</h4>
+                            <p>2kg Gewichtsdecke, schwere Rucksäcke tragen, Wandliegestütze</p>
+                        </div>
+                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">✋ Taktil</h4>
+                            <p>Therapieknete, Slime, verschiedene Stoffarten ertasten</p>
+                        </div>
+                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">🎵 Auditiv</h4>
+                            <p>Regengeräusche-App, klassische Musik, White Noise</p>
+                        </div>
+                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">👁️ Visuell</h4>
+                            <p>Lavalampe, Glitzerglas, beruhigende Farben (Blau/Grün)</p>
                         </div>
                     </div>
                 </div>
@@ -606,7 +696,7 @@
                     </button>
                     <div class="content hidden mt-4 grid md:grid-cols-2 gap-4">
                         <div class="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-orange-800 dark:text-orange-400 mb-2">🍺 Sensory Bin</h4>
+                            <h4 class="font-semibold text-orange-800 dark:text-orange-400 mb-2">🏺 Sensory Bin</h4>
                             <p>Reis/Bohnen mit versteckten Schätzen</p>
                         </div>
                         <div class="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg">
@@ -678,6 +768,18 @@
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="content hidden mt-4 space-y-4">
+                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">🔥 Burnout-Prävention</h4>
+                            <p>Warnsignale erkennen, regelmäßige Pausen einplanen</p>
+                        </div>
+                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">🤝 Support-Netzwerke</h4>
+                            <p>Selbsthilfegruppen, Online-Communities, Familie & Freunde</p>
+                        </div>
+                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">🎯 Eigene Trigger</h4>
+                            <p>Persönliche Stressfaktoren identifizieren und managen</p>
+                        </div>
                         <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
                             <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">💕 Paar-Zeit</h4>
                             <p>Beziehung pflegen trotz besonderen Herausforderungen</p>
@@ -767,45 +869,17 @@
     </footer>
 
     <script>
-        // Dark mode functionality
-        function setDarkMode(isDark) {
-            if (isDark) {
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
                 document.documentElement.classList.add('dark');
-                localStorage.setItem('theme', 'dark');
             } else {
                 document.documentElement.classList.remove('dark');
-                localStorage.setItem('theme', 'light');
-            }
-        }
-
-        // Initialize theme on page load
-        (function() {
-            const theme = localStorage.getItem('theme');
-            if (theme === 'dark') {
-                setDarkMode(true);
-            } else if (theme === 'light') {
-                setDarkMode(false);
-            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                setDarkMode(true);
-            }
-        })();
-
-        // Listen for system theme changes only if no manual override
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-            if (!localStorage.getItem('theme')) {
-                setDarkMode(event.matches);
             }
         });
-
-        // Dark mode toggle functionality
-        function toggleDarkMode() {
-            const isDark = !document.documentElement.classList.contains('dark');
-            setDarkMode(isDark);
-        }
-
-        // Add event listeners for dark mode toggles
-        document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
-        document.getElementById('darkModeToggleMobile').addEventListener('click', toggleDarkMode);
 
         // Navigation functionality
         function showSection(sectionId) {
@@ -905,115 +979,4 @@
         }
     </style>
 </body>
-</html>🔥 Burnout-Prävention</h4>
-                            <p>Warnsignale erkennen, regelmäßige Pausen einplanen</p>
-                        </div>
-                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">🤝 Support-Netzwerke</h4>
-                            <p>Selbsthilfegruppen, Online-Communities, Familie & Freunde</p>
-                        </div>
-                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">🎯 Eigene Trigger</h4>
-                            <p>Persönliche Stressfaktoren identifizieren und managen</p>
-                        </div>
-                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">
-
-                <!-- Beruhigungs-Karten -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl p-6">
-                    <button class="collapsible w-full text-left flex items-center justify-between p-2">
-                        <h3 class="text-xl font-semibold flex items-center">
-                            <i class="fas fa-heart text-danger mr-3"></i>
-                            Beruhigungs-Karten für Kinder
-                        </h3>
-                        <i class="fas fa-chevron-down transition-transform"></i>
-                    </button>
-                    <div class="content hidden mt-4 grid md:grid-cols-2 gap-4">
-                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-blue-800 dark:text-blue-400 mb-2">🐻 Atmen wie ein Bär</h4>
-                            <p>4 Sekunden einatmen, 6 Sekunden ausatmen</p>
-                        </div>
-                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-blue-800 dark:text-blue-400 mb-2">🤗 Feste Umarmung</h4>
-                            <p>Sich selbst umarmen oder Kissen drücken</p>
-                        </div>
-                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-blue-800 dark:text-blue-400 mb-2">👣 Füße spüren</h4>
-                            <p>Barfuß auf verschiedene Oberflächen stellen</p>
-                        </div>
-                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-blue-800 dark:text-blue-400 mb-2">🧊 Kalt/Warm</h4>
-                            <p>Eiswürfel halten oder warmes Kirschkernkissen</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cool-Down Raum -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl p-6">
-                    <button class="collapsible w-full text-left flex items-center justify-between p-2">
-                        <h3 class="text-xl font-semibold flex items-center">
-                            <i class="fas fa-home text-danger mr-3"></i>
-                            Cool-Down Raum einrichten
-                        </h3>
-                        <i class="fas fa-chevron-down transition-transform"></i>
-                    </button>
-                    <div class="content hidden mt-4 space-y-4">
-                        <div class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-purple-800 dark:text-purple-400 mb-2">🏠 Essentials</h4>
-                            <p>Dimmbares Licht, weiche Decken, Gewichtsdecke</p>
-                        </div>
-                        <div class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-purple-800 dark:text-purple-400 mb-2">🎯 Sensorik</h4>
-                            <p>Fidget-Spielzeug, Stressball, Noise-Cancelling-Kopfhörer</p>
-                        </div>
-                        <div class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-purple-800 dark:text-purple-400 mb-2">🧸 Beruhigung</h4>
-                            <p>Lieblingskuscheltier, beruhigende Musik-Playlist</p>
-                        </div>
-                        <div class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-purple-800 dark:text-purple-400 mb-2">🛡️ Sicherheit</h4>
-                            <p>Keine harten Kanten, weiche Materialien</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Beruhigende Aktivitäten Section -->
-        <section id="calming" class="section">
-            <div class="flex items-center mb-6">
-                <button class="back-btn mr-4 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
-                    <i class="fas fa-arrow-left"></i>
-                </button>
-                <div>
-                    <h1 class="text-3xl font-bold text-accent">Beruhigende Aktivitäten</h1>
-                    <p class="text-gray-600 dark:text-gray-400">Sensorisch freundliche Wege zum Entspannen und Regulieren</p>
-                </div>
-            </div>
-
-            <div class="space-y-6">
-                <!-- Sensorische Hilfsmittel -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl p-6">
-                    <button class="collapsible w-full text-left flex items-center justify-between p-2">
-                        <h3 class="text-xl font-semibold flex items-center">
-                            <i class="fas fa-hand-paper text-accent mr-3"></i>
-                            Sensorische Hilfsmittel konkret
-                        </h3>
-                        <i class="fas fa-chevron-down transition-transform"></i>
-                    </button>
-                    <div class="content hidden mt-4 grid md:grid-cols-2 gap-4">
-                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">💪 Propriozeption</h4>
-                            <p>2kg Gewichtsdecke, schwere Rucksäcke tragen, Wandliegestütze</p>
-                        </div>
-                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">✋ Taktil</h4>
-                            <p>Therapieknete, Slime, verschiedene Stoffarten ertasten</p>
-                        </div>
-                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">🎵 Auditiv</h4>
-                            <p>Regengeräusche-App, klassische Musik, White Noise</p>
-                        </div>
-                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
-                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-400 mb-2">👁️ Visuell</h4>
-                            <p>Lavalampe, Glitzerglas, beruhigende Farben (Blau/Grün)</p>
+</html>
